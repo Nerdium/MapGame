@@ -1,0 +1,10 @@
+---% Market Trade Report %--- 
+!-- IRON_ORE --! 
+Created by Nerdium at 2020/01/22 17:45:49: 
+ Good: IRON_ORE
+ Amount: 5
+ Price per unit: 1.5
+ ---------------------------------------- 
+
+!-- COAL --! 
+!-- IRON --! 

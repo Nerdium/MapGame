@@ -1,5 +1,5 @@
 package game.market;
 
 public enum GoodType {
-	FIBER, WOOL
+	IRON_ORE, COAL, IRON
 }
