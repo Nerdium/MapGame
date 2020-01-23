@@ -15,12 +15,20 @@ public class Main {
 	//@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
+		//Server server = new Server(6969);
+		//server.start();
+		
+		Client client = new Client("localhost", 6969);
+		client.start();
+		
 		Market market = new Market();
 		SellerInfo seller = new SellerInfo("Nerdium");
 		market.addTrade(GoodType.IRON_ORE, seller, 5, 1.5);
 		market.printTradeReport("report1");
 		
 		System.out.println(new Timestamp());
+		
+		
 		
 		
 	/*

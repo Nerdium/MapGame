@@ -6,17 +6,22 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Server 
-{ 
+public class Server extends Thread { 
     //initialize socket and input stream 
-    private Socket          socket   = null; 
-    private ServerSocket    server   = null; 
-    private DataInputStream in       =  null; 
+    private Socket socket; 
+    private ServerSocket server; 
+    private DataInputStream in; 
+    
+    private int port;
   
     // constructor with port 
     public Server(int port) 
     { 
-        // starts server and waits for a connection 
+        this.port = port;
+    }
+    
+    public void run() {
+    	// starts server and waits for a connection 
         try
         { 
             server = new ServerSocket(port); 
