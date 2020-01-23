@@ -1,6 +1,9 @@
 package game.market;
 
-public class Trade {
+import engine.util.Timestamp;
+import game.Identifiable;
+
+public class Trade implements Identifiable {
   private int id;
   private GoodType type;
   private SellerInfo seller;
@@ -24,5 +27,10 @@ public class Trade {
 			  "\n Amount: " + amount + 
 			  "\n Price per unit: " + pricePerUnit + 
 			  "\n ---------------------------------------- \n";
+  }
+
+  @Override
+  public int getId() {
+	  return id;
   }
 }
